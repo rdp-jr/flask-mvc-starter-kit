@@ -7,13 +7,52 @@ Dashboard
 
 {% block content %}
 
-<div class="text-center">
+<div class="mt-5">
 
-<h2 >Dashboard</h2>
+    <div class="shadow pt-4 ps-5 pe-5 pb-4 bg-body rounded">
+        <h3 class="fw-bold">Flask MVC Starter Kit</h2>
 
-<p >Hello, you are logged in!</p>
+            <p class="text-secondary">A Flask Starter Kit following the MVC pattern for rapidly building small
+                applications</p>
 
 
-<a href="{{ url_for('users.logout') }}">Logout</a>
+            <hr>
+
+            <div class="text-center">
+                <div class="d-flex justify-content-center">
+                    <i class="bi bi-book"></i>
+                    <a class="link-dark" href="https://flask.palletsprojects.com/en/2.0.x/">
+                        <h5 class="fw-bold ms-2">Flask Documentation </h5>
+                    </a>
+                </div>
+                <p>Flask is a lightweight WSGI web application framework. It is designed to make getting started quick
+                    and easy, with the ability to scale up to complex applications.</p>
+
+            </div>
+
+            <div class="mt-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <i class="bi bi-book"></i>
+                    <a class="link-dark" href="https://github.com/rdp-jr/flask-mvc-starter-kit/blob/main/README.md">
+                        <h5 class="fw-bold ms-2">Flask MVC Documentation </h5>
+                    </a>
+                </div>
+                <p>A Flask Starter Kit following the MVC pattern for rapidly building small applications</p>
+
+            </div>
+
+            <div class="mt-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <i class="bi bi-book"></i>
+                    <a class="link-dark" href="https://github.com/rdp-jr/crafter/blob/main/README.md">
+                        <h5 class="fw-bold ms-2">Crafter Documentation</h5>
+                    </a>
+                </div>
+                <p>A CLI tool for rapidly building applications with FlaskMVC Starter Kit</p>
+            </div>
+
+    </div>
+
+
 </div>
 {% endblock content %}
